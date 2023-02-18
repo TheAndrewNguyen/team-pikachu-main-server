@@ -1,4 +1,4 @@
-name: CI/CD 
+name: CI/CD for pull request
 
 on: 
   pull_request: 
@@ -42,7 +42,6 @@ jobs:
         working-directory: /test_pipe/www/html
         run: sudo systemctl restart nginx  
 
-        
       
       
       
