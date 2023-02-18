@@ -13,7 +13,7 @@ jobs:
     steps: 
       #- uses: actions/checkout@v2  #this is used for if you want to push all source code into runner     
       - run: cd /test_pipe/www/html   
-      - run: sudo git pull origin master
+      - run: sudo git pull origin master #lets hope this works
       - run: sudo systemctl restart nginx    
       
       
