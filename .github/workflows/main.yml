@@ -13,7 +13,7 @@ jobs:
     steps: 
       #- uses: actions/checkout@v2  #this is used for if you want to push all source code into runner     
       - run: cd /test_pipe/www/html   
-      - run: touch hello.txt
+      - run: sudo touch hello.txt
 
       
       
