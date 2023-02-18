@@ -6,13 +6,18 @@ on:
   push: 
     branches: [ master ]
     
-    
-jobs:   
-  test:   
-    runs-on: ubuntu-latest 
-    steps: 
-    - name: Super-Linter
-      uses: github/super-linter@v4.10.1
+jobs: 
+
+  super-linter:
+    name: Lint code
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Super-Linter
+        uses: github/super-linter@v4.10.1
+        with:
+          files: ${{ join(github.event.pull_request.changed_files, ',') }}
 
       
 
