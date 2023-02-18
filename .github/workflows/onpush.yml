@@ -1,3 +1,5 @@
+name: ci/cd for git push 
+
 on: 
   push: 
     branches: [ master ] 
