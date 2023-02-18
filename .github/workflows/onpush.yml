@@ -1,0 +1,28 @@
+on: 
+  push: 
+    branches: [ master ] 
+
+
+jobs: 
+  super-linter:
+    name: Lint code and merge
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Super-Linter
+        uses: github/super-linter@v4.10.1
+        with:
+          files: ${{ join(github.event.pull_request.changed_files, ',') }}    
+          
+  deploy: 
+      runs-on: self-hosted   
+      needs: [super-linter] 
+      steps: 
+        #- uses: actions/checkout@v2  #this is used for if you want to push all source code into runner       
+        - name: update code base 
+          working-directory: /test_pipe/www/html 
+          run: sudo git pull origin master        
+        - name: restart   
+          working-directory: /test_pipe/www/html
+          run: sudo systemctl restart nginx  
