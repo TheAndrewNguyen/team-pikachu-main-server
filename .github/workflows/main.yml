@@ -14,7 +14,9 @@ jobs:
       #- uses: actions/checkout@v2  #this is used for if you want to push all source code into runner     
       - run: cd    
       - run: echo "$(pwd)"   
-      - run: cd 
+      - run: cd    
+      - run: echo "$(pwd)" 
+      
       
       
       
