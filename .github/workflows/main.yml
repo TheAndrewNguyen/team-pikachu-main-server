@@ -8,9 +8,13 @@ on:
     
     
 jobs: 
-  first_one: 
+  deploy: 
     runs-on: self-hosted 
     steps: 
       #- uses: actions/checkout@v2  #this is used for if you want to push all source code into runner    
-      - run: echo "Hello there" 
+      - run: sudo su 
+      - run: cd /test_pipe/www/html 
+      - run: git pull origin master    
+      - run: systemctl restart nginx 
+      
       
