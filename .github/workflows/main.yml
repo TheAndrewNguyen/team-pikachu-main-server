@@ -8,7 +8,7 @@ on:
     
 jobs: 
   super-linter:
-    name: Lint code
+    name: Lint code and merge
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
@@ -17,6 +17,10 @@ jobs:
         uses: github/super-linter@v4.10.1
         with:
           files: ${{ join(github.event.pull_request.changed_files, ',') }}
+      - name: Merge Code 
+        if: success() 
+        run: gh pr merge <pull-request-number> --merge --delete-branch
+
 
   deploy: 
     runs-on: self-hosted   
