@@ -7,7 +7,6 @@ on:
     branches: [ master ]
     
 jobs: 
-
   super-linter:
     name: Lint code
     runs-on: ubuntu-latest
@@ -19,11 +18,8 @@ jobs:
         with:
           files: ${{ join(github.event.pull_request.changed_files, ',') }}
 
-      
-
-
   deploy: 
-    runs-on: self-hosted 
+    runs-on: self-hosted  
     steps: 
       #- uses: actions/checkout@v2  #this is used for if you want to push all source code into runner       
       - name: update code base 
@@ -34,7 +30,6 @@ jobs:
         run: sudo systemctl restart nginx  
       - name: yolo  
         working-directory: /test_pipe/www/html
-        run: echo "$(pwd)"  
         
       
       
