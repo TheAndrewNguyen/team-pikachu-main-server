@@ -6,4 +6,13 @@ on:
     branches: [ "master" ]    
     
     
-    
+jobs:
+  restart-nginx:
+    runs-on: self-hosted
+    steps:
+      - name: Restart Nginx
+        run: echo "Hello world"
+    runs-on:
+      self-hosted:
+        name: yup
+
