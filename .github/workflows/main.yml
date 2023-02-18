@@ -11,11 +11,10 @@ jobs:
   deploy: 
     runs-on: self-hosted 
     steps: 
-      #- uses: actions/checkout@v2  #this is used for if you want to push all source code into runner     
-      - run: cd    
-      - run: echo "$(pwd)"   
-      - working-directory: /home/ubuntu   
-      - run: echo "$(pwd)" 
+      #- uses: actions/checkout@v2  #this is used for if you want to push all source code into runner       
+      - name: change-dir
+        working-directory: ./app   
+        run: echo "$(pwd)" 
       
       
       
