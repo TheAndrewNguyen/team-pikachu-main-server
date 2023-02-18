@@ -7,7 +7,14 @@ on:
     branches: [ master ]
     
     
-jobs: 
+jobs:   
+  test: 
+    runs-on: ubuntu-latest 
+    steps: 
+      - run: echo "this works" 
+
+
+
   deploy: 
     runs-on: self-hosted 
     steps: 
