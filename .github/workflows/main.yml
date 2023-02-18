@@ -11,6 +11,6 @@ jobs:
   first_one: 
     runs-on: ubuntu-latest 
     steps: 
-      - uses: actions/checkout@v2       
+      #- uses: actions/checkout@v2  #this is used for if you want to push all source code into runner    
       - run: echo "Hello there" 
       
