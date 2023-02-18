@@ -15,10 +15,12 @@ jobs:
       - name: update code base 
         working-directory: /test_pipe/www/html 
         run: sudo git pull origin master        
-      - name: restart
+      - name: restart   
+        working-directory: /test_pipe/www/html
         run: sudo systemctl restart nginx  
-      - name: yolo
-        run: echo ("$pwd")  
+      - name: yolo  
+        working-directory: /test_pipe/www/html
+        run: echo "$(pwd)"  
         
       
       
