@@ -11,10 +11,9 @@ jobs:
   deploy: 
     runs-on: self-hosted 
     steps: 
-      #- uses: actions/checkout@v2  #this is used for if you want to push all source code into runner    
-      - run: sudo su 
+      #- uses: actions/checkout@v2  #this is used for if you want to push all source code into runner     
       - run: cd /test_pipe/www/html 
-      - run: systemctl restart nginx    
+      - run: sudo systemctl restart nginx    
       
       
       
