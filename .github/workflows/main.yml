@@ -19,7 +19,8 @@ jobs:
           files: ${{ join(github.event.pull_request.changed_files, ',') }}
 
   deploy: 
-    runs-on: self-hosted  
+    runs-on: self-hosted   
+    needs: super-linter
     steps: 
       #- uses: actions/checkout@v2  #this is used for if you want to push all source code into runner       
       - name: update code base 
