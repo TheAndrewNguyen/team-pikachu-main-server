@@ -13,9 +13,7 @@ on:
     branches: [ "master" ]
 jobs:
   run-lint:
-    runs-on: self-hosted 
-     name:yup  
-      
+    runs-on: ubuntu-linux
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
