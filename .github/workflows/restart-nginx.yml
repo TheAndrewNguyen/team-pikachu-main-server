@@ -1,18 +1,12 @@
 
-on:
-  push:
-    branches: [ "master" ]
-  pull_request:
-    branches: [ "master" ]    
-    
+
+
     
 jobs:
   restart-nginx:
-    runs-on: self-hosted
+    runs-on: ubuntu-latest
     steps:
       - name: Restart Nginx
         run: echo "Hello world"
-    runs-on:
-      self-hosted:
-        name: yup
+
 
