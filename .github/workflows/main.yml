@@ -8,11 +8,13 @@ on:
     
     
 jobs:   
-  test: 
+  test:   
     runs-on: ubuntu-latest 
     steps: 
-      - run: echo "this works" 
+    - name: Super-Linter
+      uses: github/super-linter@v4.10.1
 
+      
 
 
   deploy: 
