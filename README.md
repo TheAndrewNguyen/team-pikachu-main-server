@@ -12,7 +12,7 @@
 
 
 <h2> Sprints </h2> 
-<ol>   
+<ul>   
   <!---Sprint 1 Docs--->  
  <li> <br> Sprint 1: </br>     
      <ul> 
@@ -23,7 +23,7 @@
 
 
 
-</ol>   
+</ul>   
 
 
 <h2> documentation and features </h2> 
