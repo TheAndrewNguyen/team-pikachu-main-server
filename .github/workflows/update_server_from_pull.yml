@@ -1,0 +1,17 @@
+name: Pull Request Accepted
+
+on:
+  pull_request:
+    types: [closed]
+    
+jobs:
+  on_accepted:
+    runs-on: self-hosted
+    if: github.event.pull_request.merged == true
+    steps:
+      - name: update code base 
+        working-directory: /test_pipe/www/html 
+        run: sudo git pull origin master        
+      - name: restart   
+        working-directory: /test_pipe/www/html
+        run: sudo systemctl restart nginx  
