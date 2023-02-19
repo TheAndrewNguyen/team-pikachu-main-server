@@ -6,6 +6,6 @@
 </picture> 
 
 
-##Description and info about project 
-###Team pikachu from newport high school, Bellevue wa is developing a web app that takes in a recipe and finds the closest store with the cheapest price based on your area
+<h2> Description and info about project </h2>  
+<p1> Team pikachu from newport high school, Bellevue wa is developing a web app that takes in a recipe and finds the closest store with the cheapest price based on your area </p1> 
  
