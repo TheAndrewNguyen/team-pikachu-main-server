@@ -6,7 +6,6 @@ on:
     
 jobs: 
   super-linter:
-    name: Lint code and merge
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
@@ -17,11 +16,9 @@ jobs:
           exclude: "**/*.yaml,**/*.yml"
           files: ${{ join(github.event.pull_request.changed_files, ',') }}
           
-  Merge: 
-    name: Code merger       
+  Merge:       
     runs-on: ubuntu-latest       
-    needs: super-linter    
-    if: github.event.pull_request.merged == true
+    needs: super-linter
     steps:   
       - name: Checkout Code 
         uses: actions/checkout@v2 
@@ -33,7 +30,7 @@ jobs:
         
   deploy: 
     runs-on: self-hosted   
-    needs: [super-linter, Merge] 
+    needs: Merge
     steps: 
       #- uses: actions/checkout@v2  #this is used for if you want to push all source code into runner       
       - name: update code base 
