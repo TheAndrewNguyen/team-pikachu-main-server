@@ -11,8 +11,22 @@
 
 
 
-<h2> current sprints and documentation </h2> 
+<h2> Sprints </h2> 
+<ol>   
+  <!---Sprint 1 Docs--->  
+ <li> <br> Sprint 1: </br>     
+     <ul> 
+        <li> General planning </li> 
+     </ul>   
+ </li>    
 
+
+
+
+</ol>   
+
+
+<h2> documentation and features </h2> 
 
 
 
