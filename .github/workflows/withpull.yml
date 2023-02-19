@@ -22,8 +22,8 @@ jobs:
       - name: Checkout Code 
         uses: actions/checkout@v2 
       - name: Merge pull requests 
-        uses: pascalgn/automerge-action@v0.14.1   
-        with: 
+        uses: pascalgn/automerge-action@v0.14.1
+        env:
           GITHUB_TOKEN: ${{ secrets.TOKEN }}
       
         
