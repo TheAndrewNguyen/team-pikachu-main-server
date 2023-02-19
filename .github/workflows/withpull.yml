@@ -2,19 +2,31 @@ name: CI/CD
 
 on: 
   pull_request: 
-    branches: [ master ]  
+    branches: [ master ]      
     
-jobs: 
+    
+
+    
+jobs:    
+  
+  
   super-linter:
-    name: Lint code and merge
+    name: Lint code and merge   
+     
+      
+      
+      
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
       - name: Super-Linter
-        uses: github/super-linter@v4.10.1
+        uses: github/super-linter@v4.10.1   
+
         with:
-          files: ${{ join(github.event.pull_request.changed_files, ',') }}
+          files: ${{ join(github.event.pull_request.changed_files, ',') }}      
+          exclude: "**/*.yaml,**/*.yml"
+
           
   Merge: 
     name: Code merger       
@@ -40,7 +52,10 @@ jobs:
         run: sudo git pull origin master        
       - name: restart   
         working-directory: /test_pipe/www/html
-        run: sudo systemctl restart nginx  
+        run: sudo systemctl restart nginx     
+        
+        
+
 
         
       
