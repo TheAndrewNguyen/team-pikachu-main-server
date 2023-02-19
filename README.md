@@ -7,5 +7,5 @@
 
 
 ##Description and info about project 
-Team pikachu from newport high school, Bellevue wa is developing a web app that takes in a recipe and finds the closest store with the cheapest price based on your area
+###Team pikachu from newport high school, Bellevue wa is developing a web app that takes in a recipe and finds the closest store with the cheapest price based on your area
  
