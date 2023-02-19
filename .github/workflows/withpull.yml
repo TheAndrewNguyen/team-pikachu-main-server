@@ -20,8 +20,8 @@ jobs:
   Merge: 
     name: Code merger       
     runs-on: ubuntu-latest       
-    needs: super-linter    
-    if: github.event.pull_request.merged == true
+    needs: super-linter 
+    if: ${{ needs.super-linter.result == 'success' }}
     steps:   
       - name: Checkout Code 
         uses: actions/checkout@v2 
