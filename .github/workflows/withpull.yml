@@ -24,7 +24,9 @@ jobs:
       - name: Merge pull requests 
         uses: pascalgn/automerge-action@v0.14.1
         env:
-          GITHUB_TOKEN: ${{ secrets.TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.TOKEN }}   
+        with: 
+          merge_method: squash
       
         
   deploy: 
