@@ -7,5 +7,26 @@
 
 
 <h2> Description and info about project </h2>  
-<p1> Team pikachu from newport high school, Bellevue wa is developing a web app that takes in a recipe and finds the closest store with the cheapest price based on your area </p1> 
+<p1> Team pikachu from Newport High school, Bellevue wa is developing a web app that takes in a recipe and finds the closest store with the cheapest price based on your area </p1>    
+
+
+
+<h2> current sprints and documentation </h2> 
+
+
+
+
+
+
+
+
+
+<h3> Group members </h3> 
+<ul> 
+ <li> Andrew Nguyen </li> 
+ <li> Minghan sun </li> 
+ <li> Derrick Xian </li> 
+ <li> Steve ling </li> 
+<ul>    
+
  
