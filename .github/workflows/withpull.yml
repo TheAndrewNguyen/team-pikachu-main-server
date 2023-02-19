@@ -13,7 +13,6 @@ jobs:
       - name: Super-Linter
         uses: github/super-linter@v4.10.1
         with:    
-          exclude: "**/*.yaml,**/*.yml"
           files: ${{ join(github.event.pull_request.changed_files, ',') }}
           
   Merge:       
