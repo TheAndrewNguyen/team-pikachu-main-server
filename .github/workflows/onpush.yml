@@ -14,8 +14,8 @@ jobs:
         uses: actions/checkout@v2
       - name: Super-Linter
         uses: github/super-linter@v4.10.1
-        with:  
-          exclude: "**/*.yaml,**/*.yml,**/**.md"
+        with:    
+          ignore: "**/*.yaml **/*.yml **/**.md" 
           files: ${{ join(github.event.push_request.changed_files, ',') }}       
 
         
