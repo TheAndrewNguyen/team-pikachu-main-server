@@ -15,7 +15,7 @@ jobs:
       - name: Super-Linter
         uses: github/super-linter@v4.10.1
         with:   
-          excluded_files: 'README.md'
+          excluded_files: /'README.md'
           files: ${{ join(github.event.push_request.changed_files, ',') }}       
 
         
