@@ -5,8 +5,10 @@ on:
     branches: [ master ]  
     
 jobs: 
-  super-linter:
+  super-linter:   
     runs-on: ubuntu-latest
+    env: 
+      FILTER_REGEX_EXCLUDE: ./*.md
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
