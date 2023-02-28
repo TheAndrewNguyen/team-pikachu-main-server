@@ -8,7 +8,9 @@ on:
 jobs: 
   super-linter:
     name: Lint code and merge
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-latest   
+    env: 
+      FILTER_REGEX_EXCLUDE: ./*.md
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
