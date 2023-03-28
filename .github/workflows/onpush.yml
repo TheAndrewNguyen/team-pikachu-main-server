@@ -29,8 +29,8 @@ jobs:
       steps: 
         #- uses: actions/checkout@v2  #this is used for if you want to push all source code into runner       
         - name: update code base 
-          working-directory: /test_pipe/www/html 
+          working-directory: /var/www/html/team-pikachu-main-server 
           run: sudo git pull origin master        
         - name: restart   
-          working-directory: /test_pipe/www/html
+          working-directory: /var/www/html/team-pikachu-main-server
           run: sudo systemctl restart nginx  
