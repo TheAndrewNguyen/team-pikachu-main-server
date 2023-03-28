@@ -10,8 +10,8 @@ jobs:
     if: github.event.pull_request.merged == true
     steps:
       - name: update code base 
-        working-directory: /test_pipe/www/html 
+        working-directory: /var/www/html/team-pikachu-main-server 
         run: sudo git pull origin master        
       - name: restart   
-        working-directory: /test_pipe/www/html
+        working-directory: /var/www/html/team-pikachu-main-server
         run: sudo systemctl restart nginx  
