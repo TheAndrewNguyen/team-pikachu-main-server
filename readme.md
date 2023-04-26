@@ -1,4 +1,4 @@
-# Welcome to team pikachu 👋   
+# Welcome to team Pikachu 👋   
 
 
 
