@@ -13,7 +13,7 @@ app.post('/submit-form', (req, res) => {
   
   const user_input = req.body.input1;
   
-  var result = algorithm(user_input) 
+  var result_scrape = algorithm(user_input) 
 
   //Derrick and Minghan algorithum   
 
@@ -31,7 +31,7 @@ app.post('/submit-form', (req, res) => {
 
 }
 
-    async function algorithm(input) { //Finds the most likely product to match with a user input by checking matching words, substrings, etc.
+  async function algorithm(input) { //Finds the most likely product to match with a user input by checking matching words, substrings, etc.
 
         var args = input.split(";");
 
@@ -133,7 +133,7 @@ app.post('/submit-form', (req, res) => {
 
         return results;
 
-    }
+  }
 
     //All code below is Minghan's, but is required for my part to function.
 
@@ -228,19 +228,16 @@ app.post('/submit-form', (req, res) => {
 
 
 
+  
+  res.send(result_scrape);
 
 
 
-
-
-
-
-
-
-
-  res.send('Form data submitted successfully');
 });
+
+
 
 app.listen(3000, () => {
   console.log('Server started on port 3000');
 });
+
