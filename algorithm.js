@@ -1,3 +1,29 @@
+
+
+//Andrew here: this function serves to process the data and call the function
+function receive_data() {
+
+    var user_input = document.getElementByID("User_input")
+
+    var result = algorithm(input)  
+
+    display(user_input, result) 
+
+} 
+
+
+function display(item_name, item_price) {
+    
+    
+
+
+
+
+
+}
+
+
+
 function substring(keywords, start, end) {
 
     var result = keywords[start];
@@ -194,7 +220,7 @@ async function webScraper(productSearch) {
 
 
 
-        //console.log(prices)
+        console.log(prices)
 
         return prices;
 

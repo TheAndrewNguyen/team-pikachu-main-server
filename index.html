@@ -38,11 +38,16 @@
 	      <p class="lead">Please try some of our waiting games while you are waiting for the recipe generator.</p>
 		  <p class="lead">Please enter your recipe below to get started:</p>   
 
-		  <!--The button-->  
-		  <form action="WebScraperResult.html" method="POST">
-			  <div class="form-group">
+		  <!--The button/ form for user input-->  
+		  <form action="WebScraperResult.html" onsubmit="receive_data(); return false">
+			  
+			
+			<div class="form-group">
 				  <input type="text" name="Recipe" class="form-control">
 			  </div>
+
+
+
 			  <button type="submit" class="btn btn-primary">Submit</button>
 		  </form>
 	  </div>
@@ -55,6 +60,7 @@
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>   
+<script src="algorithm.js"></script>
 </body>
 </html>
