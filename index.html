@@ -39,11 +39,11 @@
 		  <p class="lead">Please enter your recipe below to get started:</p>   
 
 		  <!--The button/ form for user input-->  
-		  <form action="WebScraperResult.html" onsubmit="receive_data(); return false">
+		  <form id="web-search-form" action="WebScraperResult.html">
 			  
 			
 			<div class="form-group">
-				  <input type="text" name="Recipe" class="form-control">
+				  <input type="text" name="input1" placeholder="Enter in your item" class="form-control">
 			  </div>
 
 
@@ -61,6 +61,7 @@
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>   
-<script src="algorithm.js"></script>
+<script src="data_transfer.js"></script> 
+
 </body>
 </html>
