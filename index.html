@@ -11,7 +11,7 @@
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container">
-	  <a class="navbar-brand" href="#">Team Pikachu</a>
+	  <a class="navbar-brand" href="index.html">Team Pikachu</a>
 	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 		  <span class="navbar-toggler-icon"></span>
 	  </button>
@@ -36,11 +36,18 @@
 	  <div class="col-md-6">
 		  <h1 class="display-4">Welcome to Team Pikachu!!!</h1>
 	      <p class="lead">Please try some of our waiting games while you are waiting for the recipe generator.</p>
-		  <p class="lead">Please enter your recipe below to get started:</p>
-		  <form action="process.php" method="POST">
-			  <div class="form-group">
-				  <input type="text" name="Recipe" class="form-control">
+		  <p class="lead">Please enter your recipe below to get started:</p>   
+
+		  <!--The button/ form for user input-->  
+		  <form id="web-search-form" action="WebScraperResult.html">
+			  
+			
+			<div class="form-group">
+				  <input type="text" name="input1" placeholder="Enter in your item" class="form-control">
 			  </div>
+
+
+
 			  <button type="submit" class="btn btn-primary">Submit</button>
 		  </form>
 	  </div>
@@ -53,6 +60,8 @@
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>   
+<script src="data_transfer.js"></script> 
+
 </body>
 </html>
