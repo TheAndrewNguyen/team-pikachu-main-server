@@ -3,21 +3,23 @@
 
 const myForm = document.getElementById('web-search-form'); 
 
-myForm.addEventListener('submit', (event) => {
-  event.preventDeafult(); 
+myForm.addEventListener('submit', function(event){
   
   const formData = newFormData(myForm); 
 
+
+
+
   console.log(formData) 
-  changeHead(formData) 
+  return changeHead(formData) 
 
 
 })
 
-function changeHead(data) {   
+function changeHead(formData) {   
 
-  var input_header = document.getElementById('Item-Requested')
-  input_header.textContent = "Input: " + formData
-
-
-}
+    var input_header = document.getElementById('Item-Requested')
+    input_header.textContent = "Input: " + formData 
+  
+  
+  }   
