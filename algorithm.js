@@ -6,15 +6,17 @@ function receive_data() {
     var user_input = document.getElementByID("User_input")
 
     var result = algorithm(input)  
+    
 
+    //sends code to display function that will output it
     display(user_input, result) 
 
 } 
 
-
+//display function to the html need a different function
 function display(item_name, item_price) {
     
-    Console.log("hello there")
+    
 
 
 
