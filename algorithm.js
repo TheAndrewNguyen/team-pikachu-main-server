@@ -14,7 +14,7 @@ function receive_data() {
 
 function display(item_name, item_price) {
     
-    
+    Console.log("hello there")
 
 
 
