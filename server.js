@@ -5,10 +5,10 @@ const bodyParser = require('body-parser');
 const app = express();
 
 
-app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.urlencoded({ extended: false }));
 
 // handle form submission
-app.post('/submit-form', (req, res) => {
+app.post('/WebScraperResult.html', (req, res) => {
 
   
   const user_input = req.body.input1;
@@ -215,6 +215,7 @@ app.post('/submit-form', (req, res) => {
 
             console.log(prices)
 
+            res.send(prices)
             return prices;
 
         }
@@ -229,7 +230,7 @@ app.post('/submit-form', (req, res) => {
 
 
   
-  res.send(result_scrape);
+  res.send("Hello from the other side " + result_scrape);
 
 
 
