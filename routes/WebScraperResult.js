@@ -24,7 +24,6 @@ router.post("/", async (req, res) => {
     const render_items = {
         item_requested: item_name, 
         price: price
-
     }
 
     res.render("WebScraperResult", render_items) //pass through render items  
