@@ -9,9 +9,11 @@ router.get("/", (req, res) => {
 
 })
 
-router.post("/", (req, res) => {
-    res.render("WebScraperResult") 
 
+//post request for the fourm
+router.post("/WebScraperResult", (req, res) => {
+    //res.render("WebScraperResult") 
+    res.send("yolo") 
 
 }) 
 
