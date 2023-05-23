@@ -7,7 +7,6 @@ const app = express();
 app.listen(3000) 
 app.set('view engine', 'ejs') 
 
-console.log("this works"); 
 
 
 //get initial page
