@@ -10,13 +10,4 @@ router.get("/", (req, res) => {
 })
 
 
-//post request for the fourm
-router.post("/WebScraperResult", (req, res) => {
-    //res.render("WebScraperResult") 
-    res.send("yolo") 
-
-}) 
-
-
-
 module.exports = router;  
