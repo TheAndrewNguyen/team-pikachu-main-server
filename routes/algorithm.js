@@ -77,7 +77,7 @@ async function webScraper(productSearch) {
     //console.log("no product name");
     return null;
   }
-  const browser = await puppeteer.launch({ headless: false });
+  const browser = await puppeteer.launch({ headless: 'new' });
   const page = await browser.newPage();
   const itemNames = [];
   itemNames.push(productSearch);
