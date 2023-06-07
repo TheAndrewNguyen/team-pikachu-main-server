@@ -29,12 +29,15 @@ app.use('/about_page', about_pageRouter)
 const documentationRouter = require('./routes/documentation') 
 app.use('/documentation',documentationRouter);
 
-//Sprint progress route 
-const sprintProgressRouter = require('./routes/sprintprogress') 
-app.use('/sprintprogress', sprintProgressRouter)
+//waiting games
+const sprintProgressRouter = require('./routes/waiting_games') 
+app.use('/waiting_games', sprintProgressRouter)
 
 
 
 //WebScraper result page 
 const WebScraperResultRouter = require('./routes/WebScraperResult') 
 app.use('/WebScraperResult', WebScraperResultRouter)
+
+
+app.use(express.static('public'));
