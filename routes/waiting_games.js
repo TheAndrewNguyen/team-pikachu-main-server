@@ -5,7 +5,12 @@ const router = express.Router();
 router.use(express.static('/public'));
 
 
+router.get("/", (req,res) => {
+    res.render("waiting_games");
 
+
+
+}) 
 
 router.get("/tennis", (req, res) => {
     res.render("tennis")
